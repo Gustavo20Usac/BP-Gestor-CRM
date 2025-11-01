@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "TBP.CRM/1.0.0": {
+        "runtime": {
+          "TBP.CRM.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TBP.CRM/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

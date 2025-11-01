@@ -1,0 +1,8 @@
+C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.WebMvc\obj\Debug\net8.0\OeaMatriz.WebMvc.csproj.AssemblyReference.cache
+C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.WebMvc\obj\Debug\net8.0\OeaMatriz.WebMvc.GeneratedMSBuildEditorConfig.editorconfig
+C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.WebMvc\obj\Debug\net8.0\OeaMatriz.WebMvc.AssemblyInfoInputs.cache
+C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.WebMvc\obj\Debug\net8.0\OeaMatriz.WebMvc.AssemblyInfo.cs
+C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.WebMvc\obj\Debug\net8.0\OeaMatriz.WebMvc.csproj.CoreCompileInputs.cache
+C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.WebMvc\obj\Debug\net8.0\OeaMatriz.WebMvc.MvcApplicationPartsAssemblyInfo.cache
+C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.WebMvc\obj\Debug\net8.0\OeaMatriz.WebMvc.RazorAssemblyInfo.cache
+C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.WebMvc\obj\Debug\net8.0\OeaMatriz.WebMvc.RazorAssemblyInfo.cs

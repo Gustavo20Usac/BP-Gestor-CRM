@@ -1,0 +1,119 @@
+﻿/* ==========================================================================
+   Trade Bridge Partners - Login Styles
+   Gestor OEA y Sistema de Análisis de Riesgos
+   Author: TBP UI/UX Guidelines
+   ========================================================================== */
+
+/* ============================= */
+/* ===   Colores corporativos === */
+/* ============================= */
+:root {
+    --tbp-dark: #023840;
+    --tbp-green: #99C23B;
+    --tbp-gray: #A7A7A7;
+    --tbp-bg: #FFFFFF;
+}
+
+/* ============================= */
+/* ===   Animaciones suaves   === */
+/* ============================= */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeInUp 0.8s ease-out both;
+}
+
+/* ============================= */
+/* ===   Layout general       === */
+/* ============================= */
+body {
+    background-color: var(--tbp-bg);
+    font-family: "Inter", sans-serif;
+}
+
+#kt_app_root {
+    min-height: 100vh;
+}
+
+/* ============================= */
+/* ===   Formulario Login     === */
+/* ============================= */
+.form-label {
+    color: var(--tbp-dark);
+    font-weight: 600;
+}
+
+.form-control {
+    border-color: #e2e6ea;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+    .form-control:focus {
+        border-color: var(--tbp-green);
+        box-shadow: 0 0 0 3px rgba(153, 194, 59, 0.2);
+    }
+
+/* ============================= */
+/* ===   Botón principal      === */
+/* ============================= */
+.btn-primary {
+    background-color: var(--tbp-dark) !important;
+    border-color: var(--tbp-dark) !important;
+    color: #fff !important;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    transition: background-color 0.25s ease-in-out;
+}
+
+    .btn-primary:hover {
+        background-color: #035361 !important;
+        border-color: #035361 !important;
+    }
+
+/* ============================= */
+/* ===   Enlaces de ayuda     === */
+/* ============================= */
+.text-primary {
+    color: var(--tbp-green) !important;
+}
+
+    .text-primary:hover {
+        text-decoration: underline;
+    }
+
+/* ============================= */
+/* ===   Footer institucional === */
+/* ============================= */
+.login-footer {
+    text-align: center;
+    margin-top: 2.5rem;
+    color: var(--tbp-gray);
+    font-size: 0.85rem;
+    animation: fadeInUp 0.8s ease-out both;
+    animation-delay: 0.4s;
+}
+
+/* ============================= */
+/* ===   Responsividad        === */
+/* ============================= */
+@media (max-width: 768px) {
+    .w-lg-500px {
+        width: 100% !important;
+        padding: 2rem !important;
+    }
+
+    .login-footer {
+        margin-top: 1.5rem;
+    }
+}

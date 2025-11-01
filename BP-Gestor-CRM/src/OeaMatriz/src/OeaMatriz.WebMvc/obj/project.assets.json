@@ -1,0 +1,127 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "OeaMatriz.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "OeaMatriz.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/OeaMatriz.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OeaMatriz.Application.dll": {}
+        }
+      },
+      "OeaMatriz.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/OeaMatriz.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OeaMatriz.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OeaMatriz.Application/1.0.0": {
+      "type": "project",
+      "path": "../OeaMatriz.Application/OeaMatriz.Application.csproj",
+      "msbuildProject": "../OeaMatriz.Application/OeaMatriz.Application.csproj"
+    },
+    "OeaMatriz.Domain/1.0.0": {
+      "type": "project",
+      "path": "../OeaMatriz.Domain/OeaMatriz.Domain.csproj",
+      "msbuildProject": "../OeaMatriz.Domain/OeaMatriz.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "OeaMatriz.Application >= 1.0.0",
+      "OeaMatriz.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\gpala\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\code\\TBP\\BP-Gestor-CRM\\src\\OeaMatriz\\src\\OeaMatriz.WebMvc\\OeaMatriz.WebMvc.csproj",
+      "projectName": "OeaMatriz.WebMvc",
+      "projectPath": "C:\\code\\TBP\\BP-Gestor-CRM\\src\\OeaMatriz\\src\\OeaMatriz.WebMvc\\OeaMatriz.WebMvc.csproj",
+      "packagesPath": "C:\\Users\\gpala\\.nuget\\packages\\",
+      "outputPath": "C:\\code\\TBP\\BP-Gestor-CRM\\src\\OeaMatriz\\src\\OeaMatriz.WebMvc\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\gpala\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\code\\TBP\\BP-Gestor-CRM\\src\\OeaMatriz\\src\\OeaMatriz.Application\\OeaMatriz.Application.csproj": {
+              "projectPath": "C:\\code\\TBP\\BP-Gestor-CRM\\src\\OeaMatriz\\src\\OeaMatriz.Application\\OeaMatriz.Application.csproj"
+            },
+            "C:\\code\\TBP\\BP-Gestor-CRM\\src\\OeaMatriz\\src\\OeaMatriz.Domain\\OeaMatriz.Domain.csproj": {
+              "projectPath": "C:\\code\\TBP\\BP-Gestor-CRM\\src\\OeaMatriz\\src\\OeaMatriz.Domain\\OeaMatriz.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.0.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OeaMatriz.Domain", "src\OeaMatriz.Domain\OeaMatriz.Domain.csproj", "{B8E42C2E-B417-4628-8E1E-3CEC802B640A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OeaMatriz.Application", "src\OeaMatriz.Application\OeaMatriz.Application.csproj", "{5314BECE-4018-4F55-B073-F8C6442485D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OeaMatriz.Infrastructure", "src\OeaMatriz.Infrastructure\OeaMatriz.Infrastructure.csproj", "{86216572-2401-48E3-9C60-40A0DAA5021D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OeaMatriz.WebApi", "src\OeaMatriz.WebApi\OeaMatriz.WebApi.csproj", "{E163D286-80E9-4B2E-9EF4-3FF790DCC50E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OeaMatriz.WebMvc", "src\OeaMatriz.WebMvc\OeaMatriz.WebMvc.csproj", "{DDF66247-4617-470F-95D6-1BC01EF245AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TBP.CRM", "TBP.CRM\TBP.CRM.csproj", "{113774B6-F88D-4665-9973-86227C6FA462}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8E42C2E-B417-4628-8E1E-3CEC802B640A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8E42C2E-B417-4628-8E1E-3CEC802B640A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8E42C2E-B417-4628-8E1E-3CEC802B640A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8E42C2E-B417-4628-8E1E-3CEC802B640A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5314BECE-4018-4F55-B073-F8C6442485D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5314BECE-4018-4F55-B073-F8C6442485D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5314BECE-4018-4F55-B073-F8C6442485D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5314BECE-4018-4F55-B073-F8C6442485D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86216572-2401-48E3-9C60-40A0DAA5021D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86216572-2401-48E3-9C60-40A0DAA5021D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86216572-2401-48E3-9C60-40A0DAA5021D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86216572-2401-48E3-9C60-40A0DAA5021D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E163D286-80E9-4B2E-9EF4-3FF790DCC50E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E163D286-80E9-4B2E-9EF4-3FF790DCC50E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E163D286-80E9-4B2E-9EF4-3FF790DCC50E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E163D286-80E9-4B2E-9EF4-3FF790DCC50E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDF66247-4617-470F-95D6-1BC01EF245AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDF66247-4617-470F-95D6-1BC01EF245AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDF66247-4617-470F-95D6-1BC01EF245AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDF66247-4617-470F-95D6-1BC01EF245AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{113774B6-F88D-4665-9973-86227C6FA462}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{113774B6-F88D-4665-9973-86227C6FA462}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{113774B6-F88D-4665-9973-86227C6FA462}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{113774B6-F88D-4665-9973-86227C6FA462}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF42423D-84EE-42FE-A594-02AC10ED63EA}
+	EndGlobalSection
+EndGlobal

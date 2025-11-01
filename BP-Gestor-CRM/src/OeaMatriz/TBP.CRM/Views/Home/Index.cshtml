@@ -1,0 +1,154 @@
+﻿@*
+    Login Page – Trade Bridge Partners
+    Gestor OEA y Sistema de Análisis de Riesgos
+*@
+@{
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<!--begin::Head-->
+<head>
+    <base href="../../../" />
+    <title>TBP – Gestor OEA y Análisis de Riesgos</title>
+    <meta charset="utf-8" />
+    <meta property="og:title" content="TBP – Gestor OEA y Análisis de Riesgos" />
+
+    <link rel="shortcut icon" href="/assets/media/logos/favicon.ico" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+
+    <!--begin::Global Stylesheets-->
+    <link href="/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <!--end::Global Stylesheets-->
+    <link href="/assets/css/login-tbp.css" rel="stylesheet" type="text/css" />
+
+  
+    <script>
+        // Protección contra click-jacking
+        if (window.top != window.self) {
+            window.top.location.replace(window.self.location.href);
+        }
+    </script>
+</head>
+<!--end::Head-->
+<!--begin::Body-->
+<body id="kt_body" class="app-blank">
+    <!--begin::Theme mode setup-->
+    <script>
+        var defaultThemeMode = "light"; var themeMode;
+        if (document.documentElement) {
+            if (document.documentElement.hasAttribute("data-bs-theme-mode")) {
+                themeMode = document.documentElement.getAttribute("data-bs-theme-mode");
+            } else {
+                if (localStorage.getItem("data-bs-theme") !== null) {
+                    themeMode = localStorage.getItem("data-bs-theme");
+                } else {
+                    themeMode = defaultThemeMode;
+                }
+            }
+            if (themeMode === "system") {
+                themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            }
+            document.documentElement.setAttribute("data-bs-theme", themeMode);
+        }
+    </script>
+    <!--end::Theme mode setup-->
+    <!--begin::Root-->
+    <div class="d-flex flex-column flex-root" id="kt_app_root">
+        <!--begin::Authentication - Sign-in -->
+        <div class="d-flex flex-column flex-lg-row flex-column-fluid">
+            <!--begin::Body-->
+            <div class="d-flex flex-column flex-lg-row-fluid w-lg-50 p-10 order-2 order-lg-1 fade-in">
+                <!--begin::Form-->
+                <div class="d-flex flex-center flex-column flex-lg-row-fluid">
+                    <!--begin::Wrapper-->
+                    <div class="w-lg-500px p-10">
+                        <!--begin::Form-->
+                        <form class="form w-100" id="kt_sign_in_form">
+                            <!--begin::Heading-->
+                            <div class="text-center mb-11">
+                                <h1 class="text-gray-900 fw-bolder mb-3">Accede a tu cuenta</h1>
+                                <h5 class="text-gray-500 fw-normal mb-3">
+                                     
+                                    <span class="fw-semibold text-gray-900">Gestor OEA y Sistema de Análisis de Riesgos</span>
+                                </h5>
+                            </div>
+                            <!--end::Heading-->
+                            <!--begin::Input group-->
+                            <div class="fv-row mb-8">
+                                <label for="email" class="form-label fw-semibold">Correo electrónico</label>
+                                <input type="email" placeholder="usuario@empresa.com" name="email" id="email"
+                                       autocomplete="off" class="form-control bg-transparent" />
+                            </div>
+
+                            <div class="fv-row mb-3">
+                                <label for="password" class="form-label fw-semibold">Contraseña</label>
+                                <input type="password" placeholder="Ingresa tu contraseña" name="password" id="password"
+                                       autocomplete="off" class="form-control bg-transparent" />
+                            </div>
+                            <!--end::Input group-->
+                            <!--begin::Submit button-->
+                            <div class="d-grid mb-4">
+                                <button type="submit" id="kt_sign_in_submit" class="btn btn-primary">
+                                    <span class="indicator-label">Iniciar sesión</span>
+                                    <span class="indicator-progress">
+                                        Cargando
+                                        <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                                    </span>
+                                </button>
+                            </div>
+                            <!--end::Submit button-->
+                            <!--begin::Links-->
+                            <div class="text-center mb-10">
+                                <a href="#" class="text-primary fw-semibold me-3">¿Olvidaste tu contraseña?</a>
+                                <a href="#" class="text-gray-500">
+                                    ¿Necesitas ayuda?
+                                    <span class="text-primary fw-semibold">Contacta soporte</span>
+                                </a>
+                            </div>
+                            <!--end::Links-->
+                        </form>
+                        <!--end::Form-->
+                        <!-- Footer institucional -->
+                        <div class="login-footer">
+                            © 2025 Trade Bridge Partners. Todos los derechos reservados.
+                        </div>
+
+                    </div>
+                    <!--end::Wrapper-->
+                </div>
+                <!--end::Form-->
+            </div>
+            <!--end::Body-->
+            <!--begin::Aside-->
+            <div class="d-flex flex-lg-row-fluid w-lg-50 bgi-size-cover bgi-position-center order-1 order-lg-2"
+                 style="background-image: url(/assets/media/misc/fondo_tbp.png)">
+                <div class="d-flex flex-column flex-center py-7 py-lg-15 px-5 px-md-15 w-100">
+                    <!-- Aquí podrías poner un logo o tagline adicional -->
+                </div>
+            </div>
+            <!--end::Aside-->
+        </div>
+        <!--end::Authentication - Sign-in-->
+    </div>
+    <!--end::Root-->
+    <!--begin::Javascript-->
+    <script>var hostUrl = "/assets/";</script>
+    <script src="/assets/plugins/global/plugins.bundle.js"></script>
+    <script src="/assets/js/scripts.bundle.js"></script>
+
+    <script src="~/js/messageUtils.js"></script>
+    <script src="~/js/ajax/ajax-api.js"></script>
+    <script>
+        var urlLogin = '@Url.Action("Index", "Home")';
+        $("#kt_sign_in_form").on("submit", function (e) {
+            e.preventDefault();
+            login();
+        });
+    </script>
+    <script src="~/js/pages/init.js"></script>
+    <!--end::Javascript-->
+</body>
+<!--end::Body-->
+</html>

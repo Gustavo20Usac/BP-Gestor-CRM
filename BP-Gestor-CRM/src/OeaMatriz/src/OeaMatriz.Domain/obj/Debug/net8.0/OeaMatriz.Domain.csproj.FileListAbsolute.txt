@@ -1,0 +1,11 @@
+C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.Domain\obj\Debug\net8.0\OeaMatriz.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.Domain\obj\Debug\net8.0\OeaMatriz.Domain.AssemblyInfoInputs.cache
+C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.Domain\obj\Debug\net8.0\OeaMatriz.Domain.AssemblyInfo.cs
+C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.Domain\obj\Debug\net8.0\OeaMatriz.Domain.csproj.CoreCompileInputs.cache
+C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.Domain\bin\Debug\net8.0\OeaMatriz.Domain.deps.json
+C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.Domain\bin\Debug\net8.0\OeaMatriz.Domain.dll
+C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.Domain\bin\Debug\net8.0\OeaMatriz.Domain.pdb
+C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.Domain\obj\Debug\net8.0\OeaMatriz.Domain.dll
+C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.Domain\obj\Debug\net8.0\refint\OeaMatriz.Domain.dll
+C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.Domain\obj\Debug\net8.0\OeaMatriz.Domain.pdb
+C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.Domain\obj\Debug\net8.0\ref\OeaMatriz.Domain.dll

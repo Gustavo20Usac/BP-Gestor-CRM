@@ -1,0 +1,112 @@
+﻿@*
+    Trade Bridge Partners – Gestor OEA y Sistema de Análisis de Riesgos
+*@
+@{
+}
+
+@inject Microsoft.AspNetCore.Antiforgery.IAntiforgery Antiforgery
+@{
+    var __aft = Antiforgery.GetAndStoreTokens(Context);
+}
+
+<head>
+    <title>TBP – Gestor OEA y Sistema de Análisis de Riesgos</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Plataforma de Trade Bridge Partners para gestión OEA y análisis de riesgos en comercio internacional." />
+    <meta name="keywords" content="Trade Bridge Partners, OEA, Análisis de Riesgos, Comercio Internacional, TBP" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:locale" content="es_GT" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="TBP – Gestor OEA y Sistema de Análisis de Riesgos" />
+    <meta property="og:description" content="Solución tecnológica de Trade Bridge Partners para el control, monitoreo y análisis de riesgos en procesos OEA." />
+    <meta property="og:url" content="https://tradebridgepartners.com/" />
+    <meta property="og:site_name" content="Trade Bridge Partners" />
+
+    <link rel="shortcut icon" href="/assets/media/logos/favicon.ico" />
+
+    <!--begin::Fonts (mandatory)-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+    <!--end::Fonts-->
+    <!--begin::Vendor Stylesheets (for this page only)-->
+    <link href="/assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+    <!--end::Vendor Stylesheets-->
+    <!--begin::Global Stylesheets Bundle-->
+    <link href="/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/login-tbp.css" rel="stylesheet" type="text/css" />
+    <!--end::Global Stylesheets Bundle-->
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.css" />
+
+    <style>
+        /* ====== Switch Styles ====== */
+        .form-check-input {
+            width: 3em;
+            height: 1.5em;
+            background-color: #e9ecef;
+            border: 2px solid #e9ecef;
+            appearance: none;
+            border-radius: 1.5em;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+            .form-check-input:checked {
+                background-color: #99C23B;
+                border-color: #99C23B;
+            }
+
+            .form-check-input::before {
+                content: "";
+                position: absolute;
+                top: 0.1em;
+                left: 0.1em;
+                width: 1.3em;
+                height: 1.3em;
+                background-color: #fff;
+                border-radius: 50%;
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .form-check-input:checked::before {
+                transform: translateX(1.5em);
+            }
+
+        /* Versiones personalizadas */
+        .form-switch-light-warning:checked {
+            background-color: #fff3cd;
+            border-color: #fff3cd;
+        }
+
+        .form-switch-light-success:checked {
+            background-color: #d1e7dd;
+            border-color: #d1e7dd;
+        }
+
+        .form-switch-light-danger:checked {
+            background-color: #f8d7da;
+            border-color: #f8d7da;
+        }
+
+        /* ====== Estilos para acciones ====== */
+        .td-acciones {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+            .td-acciones a {
+                text-decoration: none;
+                color: #023840;
+                font-weight: 500;
+            }
+
+                .td-acciones a:hover {
+                    color: #99C23B;
+                }
+    </style>
+
+    <meta name="request-verification-token" content="@__aft.RequestToken" />
+</head>

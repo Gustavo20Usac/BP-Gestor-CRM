@@ -1,0 +1,173 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@* 
+@using System.Globalization
+@using System.Security.Claims
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizerFactory LocalizerFactory
+
+@{
+    var localizer = LocalizerFactory.Create("Shared.AppResources", "HPIT.WorldVision.UI");
+
+    // === Datos de usuario (ajusta los nombres de los claims si fuese necesario) ===
+    var userName = User?.Identity?.GetUserName() ?? User?.Identity?.Name ?? "—";
+    var roleName =  User?.Identity?.GetRoleName()  ?? "—";
+    var unidad = User?.Identity?.GetUnidadEjecutoraName() ?? "—";
+    var cluster = User?.Identity?.GetClusterName() ?? "—";
+
+    // (Opcional) URLs para accesos rápidos (ajusta a tus rutas reales)
+  
+    var urlAprobaciones = Url.Action("NewsFeed", "Content");
+    var urlMisBorradores = Url.Action("Drafts", "Content");
+    var urlReportes = Url.Action("ByImplementingUnit", "Reports");
+    var urlMiPerfil = Url.Action("Profile", "Account");
+    var urlAyuda = Url.Action("Index", "Help");
+
+    string Iniciales(string fullName)
+    {
+        if (string.IsNullOrWhiteSpace(fullName)) return "WV";
+        var parts = fullName.Trim().Split(' ', StringSplitOptions.RemoveEmptyEntries);
+        if (parts.Length == 1) return parts[0].Substring(0, 1).ToUpperInvariant();
+        return (parts[0][0].ToString() + parts[^1][0].ToString()).ToUpperInvariant();
+    }
+} *@
+
+<div class="app-main flex-column flex-row-fluid" id="kt_app_main">
+    <div class="d-flex flex-column flex-column-fluid">
+
+        <!--/Toolbar -->
+        <!-- Content -->
+        <div id="kt_app_content" class="app-content flex-column-fluid">
+            <div id="kt_app_content_container" class="app-container container-fluid">
+
+                <!-- Bienvenida + chips -->
+                <div class="row g-5 gx-xl-10 mb-5">
+                    <div class="col-12">
+                        <div class="card border-0 shadow-sm bgi-no-repeat bgi-position-x-end bgi-size-contain"
+                             style="background-color:#F5F8FA; background-image:url('/assets/media/patterns/vector-1.png')">
+                            <div class="card-body d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between p-8">
+                                <div class="d-flex align-items-start">
+                                    <!-- Avatar iniciales -->
+                                    <div class="symbol symbol-70px symbol-circle me-5">
+                                        <span class="symbol-label bg-primary text-white fs-2 fw-bold">
+                                            @* @Iniciales(userName) *@
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class="fs-2 fw-bold text-gray-900 mb-1">
+                                           Bienvenido
+                                        </div>
+                                        <div class="text-muted fs-6">
+                                            Bienvenido sub mensaje
+                                        </div>
+
+                                        <!-- Chips -->
+                                        <div class="mt-4 d-flex flex-wrap gap-2">
+                                            <span class="badge badge-light-primary">
+                                                <i class="ki-duotone ki-shield-tick fs-5 me-1"></i>Perfil:
+                                                <span class="fw-semibold ms-1">@* @roleName *@</span>
+                                            </span>
+                                            <span class="badge badge-light-success">
+                                                <i class="ki-duotone ki-element-11 fs-5 me-1"></i> Empresa:
+                                                <span class="fw-semibold ms-1">@* @unidad *@</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- CTA -->
+                         
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accesos rápidos -->
+                <div class="row g-5 gx-xl-10">
+                    <!-- Aprobaciones -->
+                    <div class="col-sm-6 col-xl-4 col-xxl-3">
+                        <a href="#" class="card hover-elevate-up h-100 border-0 shadow-sm">
+                            <div class="card-body d-flex align-items-center">
+                                <div class="symbol symbol-50px me-5">
+                                    <span class="symbol-label bg-light-danger">
+                                        <i class="ki-duotone ki-verify fs-2x text-danger"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    <div class="fs-5 fw-bold text-gray-900">x</div>
+                                    <div class="text-muted">x</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+              
+
+                    <!-- Reportes -->
+                    <div class="col-sm-6 col-xl-4 col-xxl-3">
+                        <a href="#" class="card hover-elevate-up h-100 border-0 shadow-sm">
+                            <div class="card-body d-flex align-items-center">
+                                <div class="symbol symbol-50px me-5">
+                                    <span class="symbol-label bg-light-info">
+                                        <i class="ki-duotone ki-graph-3 fs-2x text-info"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    <div class="fs-5 fw-bold text-gray-900">tex</div>
+                                    <div class="text-muted">tex</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Mi perfil -->
+                    <div class="col-sm-6 col-xl-4 col-xxl-3">
+                        <a href="#" class="card hover-elevate-up h-100 border-0 shadow-sm">
+                            <div class="card-body d-flex align-items-center">
+                                <div class="symbol symbol-50px me-5">
+                                    <span class="symbol-label bg-light-success">
+                                        <i class="ki-duotone ki-user fs-2x text-success"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    <div class="fs-5 fw-bold text-gray-900">x</div>
+                                    <div class="text-muted">x</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Ayuda -->
+                    <div class="col-sm-6 col-xl-4 col-xxl-3">
+                        <a href="#" class="card hover-elevate-up h-100 border-0 shadow-sm">
+                            <div class="card-body d-flex align-items-center">
+                                <div class="symbol symbol-50px me-5">
+                                    <span class="symbol-label bg-light-dark">
+                                        <i class="ki-duotone ki-information-2 fs-2x text-gray-800"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    <div class="fs-5 fw-bold text-gray-900">x</div>
+                                    <div class="text-muted">x</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- /Accesos rápidos -->
+
+            </div>
+        </div>
+        <!--/Content -->
+    </div>
+
+    <!-- Footer -->
+    <partial name="_Footer" />
+    <!-- /Footer -->
+</div>
