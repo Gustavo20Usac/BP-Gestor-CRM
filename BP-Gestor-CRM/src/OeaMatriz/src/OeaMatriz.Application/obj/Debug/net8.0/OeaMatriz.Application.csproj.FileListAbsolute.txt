@@ -13,3 +13,4 @@ C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.Application\obj\Debug\net8
 C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.Application\obj\Debug\net8.0\refint\OeaMatriz.Application.dll
 C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.Application\obj\Debug\net8.0\OeaMatriz.Application.pdb
 C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.Application\obj\Debug\net8.0\ref\OeaMatriz.Application.dll
+C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.Application\obj\Debug\net8.0\OeaMatriz.Application.sourcelink.json

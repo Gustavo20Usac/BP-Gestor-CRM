@@ -9,3 +9,4 @@ C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.Domain\obj\Debug\net8.0\Oe
 C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.Domain\obj\Debug\net8.0\refint\OeaMatriz.Domain.dll
 C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.Domain\obj\Debug\net8.0\OeaMatriz.Domain.pdb
 C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.Domain\obj\Debug\net8.0\ref\OeaMatriz.Domain.dll
+C:\code\TBP\BP-Gestor-CRM\src\OeaMatriz\src\OeaMatriz.Domain\obj\Debug\net8.0\OeaMatriz.Domain.sourcelink.json

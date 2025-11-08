@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TBP.CRM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ce612fa86b2e0bc7b44e3a3c3b96b985ba30f03")]
 [assembly: System.Reflection.AssemblyProductAttribute("TBP.CRM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TBP.CRM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
